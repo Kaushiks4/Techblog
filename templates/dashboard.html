@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tech Blog </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="../static/css/writeblog.css">
+
+</head>
+<style>
+body {
+    margin:0;
+    padding: 0;
+    width:100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    font-family: 'Iceland', cursive;
+    font-size: 80px;
+    text-align: center;
+    text-decoration: Underline;
+    color: White;
+}
+table {
+    width: 80%;
+    height: 70px;
+    margin-left: 150px;
+    padding: 20px 20px;
+    color: white;
+    border-collapse: collapse;
+}
+th {
+    background-color: white;
+    color: black;
+}
+tr, td {
+    border-bottom: 1px solid grey;
+    background-color:white;
+    color: black;
+    text-align: center;
+}
+</style>
+<body>
+    <div class="header">
+        <h1>DASHBOARD</h1>
+    </div>
+    <div style="overflow-x: auto;">
+    <table >
+        <tr>
+            <th>Username</th>
+            <th>Number of Articles</th>
+        </tr>
+    {% for user in users %}
+        <tr>
+            <td>{{ user.fullname }}</td>
+        {% if user.article3 %}
+            <td>{{ 3 }}</td>
+        {% elif user.article2 %}
+            <td>{{ 2 }}</td>
+        {% elif user.article1 %}
+            <td>{{ 1 }}</td>
+        {% else %}
+            <td>{{ 0 }}</td>
+        </tr>
+        {% endif %}
+    {% endfor %}   
+    </table>
+    </div>
+</body>
+</html>

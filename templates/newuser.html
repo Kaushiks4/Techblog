@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+<head>
+<style>
+ body{
+    background-image: url(../static/images/2.jpg);
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 380px;
+    color: white;
+    opacity:.7;
+    font-family: "Helvetica Neue";
+    border:.5px solid white;
+    background-image:linear-gradient(to bottom right,black,grey);
+    border-radius: 10%;
+    margin-top:100px;
+    margin-left: 612px;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+}
+.container input[type="text"],input[type="password"] {
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.container input[type="submit"] {
+    width: 75%;
+    margin: 10px 20px;
+    border: 1px solid white;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.container input[type="submit"]:hover {
+    color:white;
+    background-color: rgba(0,255,0,0.5);
+    text-decoration: none;
+}
+.container:hover{
+    opacity:1;
+}
+h1{
+    margin-top: 50px;
+    margin-left: 596px;
+    color: white;
+    font-family: 'Iceland',cursive;
+    font-weight: normal;
+    font-size: 120px;
+    #text-decoration: Underline;
+}
+.l {
+    border-radius: 60%;
+    margin:-100px;
+    margin-left: -30px;
+    padding:1px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 1:
+    box-sizing:border-box;
+}
+</style>
+<body>
+    <h1> Tech blog </h1>
+    <div class="container">
+    <img class="l" src="../static/images/u.jpg">
+    <form method = 'POST' action="">
+    <input type="text" name="fullname" placeholder="Name .."><br>
+    <input type="text" name="username" placeholder="Username .. "><br>
+    <input type="password" name="password" placeholder="Password .."><br>
+    <input type="submit" value="Sign Up"><br>
+    </form>
+    </div>
+</body>
+</html> 
